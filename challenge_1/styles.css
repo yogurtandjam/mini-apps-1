@@ -16,6 +16,10 @@ body {
 #stats {
   font-size:20px;
 }
+#resetWins {
+  margin-top:5px;
+  margin-bottom: 10px;
+}
 .head {
   margin: auto;
   text-align: center;

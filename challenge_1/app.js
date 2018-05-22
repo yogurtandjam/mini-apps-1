@@ -2,7 +2,6 @@ window.onload = function() {
   init();
 }
 var init = function() {
-  var turn = 0;
   var oWins = 0;
   var xWins = 0;
   var isWon = false;
@@ -67,7 +66,7 @@ var init = function() {
   var gameOver = {
     winner : function (user) {
       if (boardHelpers.allHoriz(user) || boardHelpers.allVert(user) || boardHelpers.allD(user)) {
-        turn = 0;
+        boardHelpers.turn = 0;
         isWon = true;
         let winner = 0;
         if (user === 'X') {
@@ -105,22 +104,23 @@ var init = function() {
       }
       winnerBox.innerHTML = '';
       isWon = false;
-      turn = 0;
+      boardHelpers.turn = 0;
       refresh.hidden = true;
     }
   }
 
   var boardHelpers = {
+    turn:0,
     handleClick : function (item) {
       if (item.innerHTML === '' && !isWon) {
-        if (turn % 2 === 0) {
+        if (boardHelpers.turn % 2 === 0) {
           item.innerHTML = 'X';
           gameOver.winner('X')
         } else {
           item.innerHTML = 'O';
           gameOver.winner('O')
         }
-        turn++;
+        boardHelpers.turn++;
       }
     },
     horizontal : function (user, row) {
