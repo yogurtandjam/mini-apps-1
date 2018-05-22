@@ -1,0 +1,23 @@
+#input {
+  height:200px;
+  width:500px;
+}
+.but {
+  cursor:pointer;
+  height:20px;
+  width:500px;
+  background-color:#ccffff;
+  text-align:center;
+  border-radius:10px;
+  box-shadow:1px 1px 1px;
+  font-family: rockwell;
+}
+.but:active {
+  height:20px;
+  width:500px;
+  background-color:#ccffff;
+  text-align:center;
+  border-radius:10px;
+  box-shadow:none !important;
+  font-family: rockwell;
+}
