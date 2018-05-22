@@ -1,0 +1,47 @@
+@font-face {
+font-family: "Flood";
+src: url("./floodfonts_flood/FLOODICO.ttf");
+}
+p {
+  font-family: Flood;
+  font-size: 50px;
+}
+body {
+  background-color: #eea29a;
+  text-align: center;
+}
+#leaderBoard {
+  font-family:helvetica;
+}
+#stats {
+  font-size:20px;
+}
+.head {
+  margin: auto;
+  text-align: center;
+  background-color: #f7cac9;
+  border-radius: 2px;
+  box-shadow: 2px 1px 1px;
+  width:30%;
+  font-family: helvetica;
+}
+.board {
+
+}
+.row {
+  vertical-align: top;
+  text-align: center;
+  display:inline-block;
+}
+.box {
+  text-align: center;
+  background-color: #f7cac9;
+  margin-bottom: 5px;
+  height: 80px;
+  width: 80px;
+  font-size: 60px;
+  font-family: Flood;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 2px 1px 1px;
+}

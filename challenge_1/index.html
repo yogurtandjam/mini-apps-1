@@ -1,2 +1,37 @@
-
-
+<body>
+  <script src="app.js"></script>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <div class="head">
+  <h1>Welcome to the Red TicTactOber</h1>
+  </div>
+  <p>abcdefghijklmnopqrstuvwxyz</p>
+  <div class="board">
+    <div id="leaderBoard">
+      <form>
+        <input id="nameInput" type="text" placeholder="Player 1"></input>
+        <button id="playerOne">Submit</button>
+        <input id="nameTwoInput" type="text" placeholder="Player 2"></input>
+        <button id="playerTwo">Submit</button>
+      </form>
+      <h2>Kill Count</h2>
+      <div id="stats" style="font-family:helvetica">X Wins:0 VS O Wins:0</div>
+    </div>
+    <div class="row">
+      <div class="box" id="box" ></div>
+      <div class="box" id="box" ></div>
+      <div class="box" id="box" ></div>
+    </div>
+    <div class="row">
+      <div class="box" id="box"></div>
+      <div class="box" id="box"></div>
+      <div class="box" id="box"></div>
+    </div>
+    <div class="row">
+      <div class="box" id="box"></div>
+      <div class="box" id="box"></div>
+      <div class="box" id="box"></div>
+    </div>
+  </div>
+  <div id="Win"></div>
+  <button id="refresh">Start anew</button>
+</body>
